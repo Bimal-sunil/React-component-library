@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext", // ESNext is better for modern code
+    "jsx": "react-jsx", // React 17+ JSX Transform
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "strict": true,
+    "types": ["jest", "@testing-library/jest-dom"], // Include Jest types here
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["../*"]
+    }
+  },
+  "include": [
+    "src", // Include your app source files
+    "jest.setup.ts" // Include Jest setup
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules
+    "dist" // Exclude build output
+  ],
+}
